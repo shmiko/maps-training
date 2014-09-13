@@ -1,29 +1,23 @@
-# Foundation Compass Template
+# Google Maps and Mapbox Examples
 
-The easiest way to get started with Foundation + Compass.
+A quick run through of some options for creating and publishing maps using Google Maps API v3 and Mapbox
 
 ## Requirements
 
-  * Ruby 1.9+
   * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
   * [bower](http://bower.io): `npm install bower -g`
 
 ## Quickstart
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
+  * Download the repository, and run npm install && bower install to get the latest modules latest dependencies
+  * Styles are provided using the Foundation library. If you wish to tweak these, you'll also need Ruby 1.9+ and Compass.
+  * Important - at the time of writing, Foundation 5.4 needs SASS 3.4, which is NOT supported by Libsass.
+
 Then when you're working on your project, just run the following command:
 
 ```bash
-compass watch
+grunt
 ```
+to start a static html server on http://localhost:9000/
 
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+LiveReload is active, so any changes to files in the repo will trigger a browser reload.
