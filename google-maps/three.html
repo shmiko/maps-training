@@ -10,15 +10,19 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnsX2VuCrpnPIdWOtxQZzLE4GN26ZF9w"></script>
 
     <style type="text/css">
+      #map-canvas {height:400px;}
     </style>
 
     <script type="text/javascript">
+      // Note - we're using a global variable to simplify inspection and debugging
+      // Not necessarily a good idea on live sites
+      var map = {};
       function initialize() {
         var mapOptions = {
           center: { lat: 51.4500, lng:-2.5833 },
           zoom: 8
         };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
+        map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -34,8 +38,8 @@
 
     <div class="row">
       <div class="large-12 columns">
-        <div class="problem-panel">
-          <p>No Map displayed?</p>
+        <div class="panel">
+          <p>Solved! Basic Map display ready</p>
         </div>
       </div>
     </div>
@@ -43,16 +47,29 @@
     <div class="row">
       <div id="demo-code" class="small-12 medium-6 columns">
         <h2>Code</h2>
-          <p><pre>            
+          <p><pre>
+
+            # Define a global variable [debugging only]
+            var map;
+
+            #Initialisation Function
             function initialize() {
-              var mapOptions = {
-                center: { lat: -2.5833, lng: 51.4500},
-                zoom: 8
-              };
-              var map = new google.maps.Map(document.getElementById('map-canvas'),
-                  mapOptions);
+              &nbsp;&nbsp;var mapOptions = {
+                &nbsp;&nbsp;&nbsp;&nbsp;center: { lat: 51.4500, lng:-2.5833 },
+                &nbsp;&nbsp;&nbsp;&nbsp;zoom: 8
+              &nbsp;&nbsp;};
+              &nbsp;&nbsp;map = new google.maps.Map(
+              &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('map-canvas'),
+              &nbsp;&nbsp;&nbsp;&nbsp;mapOptions
+              &nbsp;&nbsp;&nbsp;&nbsp;);
             }
-            google.maps.event.addDomListener(window, 'load', initialize);
+
+            #Add an Event listener to trigger initialize()
+            google.maps.event.addDomListener(
+              &nbsp;&nbsp;window,
+              &nbsp;&nbsp;'load',
+              &nbsp;&nbsp;initialize
+            );
           </pre></p>
       </div>
 

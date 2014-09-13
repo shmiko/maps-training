@@ -1,0 +1,23 @@
+#pagination-container {margin-top: 20px;}
+
+.google-map-canvas img, #map-canvas img {max-width: inherit;}
+
+.google-map-container {height:500px;}
+.google-map-canvas {height:70%;}
+
+pre {white-space: pre-line;}
+
+.problem-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:rgb(235, 199, 134),
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  & p {
+    font-size: rem-calc(25);
+    color: rgb(52, 58, 44);
+  }
+}
