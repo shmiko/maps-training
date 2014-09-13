@@ -1,11 +1,19 @@
 #pagination-container {margin-top: 20px;}
 
-.google-map-canvas img, #map-canvas img {max-width: inherit;}
+.google-map-canvas img, #map-canvas img {max-width: inherit; overflow:none;}
 
 .google-map-container {height:500px;}
 .google-map-canvas {height:70%;}
 
+.info-window {height: 100px; width: 150px;}
+.info-window,  .gm-style-iw {overflow: hidden;}
+
 pre {white-space: pre-line;}
+
+#results {
+  max-height: 430px;
+  overflow: overlay;
+}
 
 .problem-panel {
   @include panel(

@@ -6,14 +6,9 @@
     <title>Maps Training - Google Maps</title>
     <link rel="stylesheet" href="/stylesheets/app.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
-
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnsX2VuCrpnPIdWOtxQZzLE4GN26ZF9w"></script>
-
-    <style type="text/css">
-    /* no inline styles */
-    </style>
-
   </head>
+
   <body>
     <div class="row">
       <div class="large-12 columns">
@@ -24,7 +19,7 @@
     <div class="row">
       <div class="large-12 columns">
         <div class="panel">
-          <p>Using GeoJSON data</p>
+          <p>Simple Markers</p>
         </div>
       </div>
     </div>
@@ -33,11 +28,14 @@
       <div id="demo-content" class="small-12 medium-6 columns google-map-container">
         <h2>First Map</h2>
         <div id="map-canvas-one" class="google-map-canvas"></div>
+        <br>
+        <a id="addMarker" class="button radius">Add one Marker</a>
+        <a id="destroyMarkers" class="button radius">Destroy all Marker</a>
       </div>
 
       <div id="demo-code" class="small-12 medium-6 columns">
         <h2>Code</h2>
-          <pre>
+          <pre id="results">
           </pre>
       </div>
 
@@ -52,7 +50,8 @@
           <li><a href="/google-maps/three.html">#3</a></li>
           <li><a href="/google-maps/four.html">#4</a></li>
           <li><a href="/google-maps/five.html">#5</a></li>
-          <li class="current"><a href="/google-maps/five.html">#6</a></li>
+          <li class="current"><a href="/google-maps/six.html">#6</a></li>
+          <li class="current"><a href="/google-maps/seven.html">#7</a></li>
           <li class="arrow"><a href="">&raquo;</a></li>
         </ul>
       </div>
@@ -61,7 +60,7 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/five.js"></script>
+    <script src="/js/six.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>

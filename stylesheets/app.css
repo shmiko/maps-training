@@ -9010,6 +9010,7 @@ th.hide-for-touch {
 /* line 3, ../scss/_custom.scss */
 .google-map-canvas img, #map-canvas img {
   max-width: inherit;
+  overflow: none;
 }
 
 /* line 5, ../scss/_custom.scss */
@@ -9023,11 +9024,28 @@ th.hide-for-touch {
 }
 
 /* line 8, ../scss/_custom.scss */
+.info-window {
+  height: 100px;
+  width: 150px;
+}
+
+/* line 9, ../scss/_custom.scss */
+.info-window, .gm-style-iw {
+  overflow: hidden;
+}
+
+/* line 11, ../scss/_custom.scss */
 pre {
   white-space: pre-line;
 }
 
-/* line 10, ../scss/_custom.scss */
+/* line 13, ../scss/_custom.scss */
+#results {
+  max-height: 430px;
+  overflow: overlay;
+}
+
+/* line 18, ../scss/_custom.scss */
 .problem-panel {
   border-style: solid;
   border-width: 1px;
@@ -9057,7 +9075,7 @@ pre {
 .problem-panel h1.subheader, .problem-panel h2.subheader, .problem-panel h3.subheader, .problem-panel h4.subheader, .problem-panel h5.subheader, .problem-panel h6.subheader {
   line-height: 1.4;
 }
-/* line 19, ../scss/_custom.scss */
+/* line 27, ../scss/_custom.scss */
 .problem-panel p {
   font-size: 1.5625rem;
   color: #343a2c;

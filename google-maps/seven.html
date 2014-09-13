@@ -6,14 +6,9 @@
     <title>Maps Training - Google Maps</title>
     <link rel="stylesheet" href="/stylesheets/app.css" />
     <script src="/bower_components/modernizr/modernizr.js"></script>
-
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnsX2VuCrpnPIdWOtxQZzLE4GN26ZF9w"></script>
-
-    <style type="text/css">
-    /* no inline styles */
-    </style>
-
   </head>
+
   <body>
     <div class="row">
       <div class="large-12 columns">
@@ -24,7 +19,7 @@
     <div class="row">
       <div class="large-12 columns">
         <div class="panel">
-          <p>Multiple Maps</p>
+          <p>Loading a GeoJSON file</p>
         </div>
       </div>
     </div>
@@ -33,13 +28,16 @@
       <div id="demo-content" class="small-12 medium-6 columns google-map-container">
         <h2>First Map</h2>
         <div id="map-canvas-one" class="google-map-canvas"></div>
+        <br>
+        <a id="addMarker" class="button radius">Add one Marker</a>
+        <a id="destroyMarkers" class="button radius">Destroy all Marker</a>
       </div>
 
-      <div id="demo-content-two" class="small-12 medium-6 columns google-map-container">
-        <h2>Second Map</h2>
-        <div id="map-canvas-two" class="google-map-canvas"></div>
-        <br>
-        <a id="toggleStreetView" class="button radius">Toggle Street View</a>
+      <div id="demo-code" class="small-12 medium-6 columns">
+        <h2>Notes</h2>
+          <p>GeoJSON is an open standard format for encoding collections of simple geographical features along with their non-spatial attributes using JavaScript Object Notation.</p>
+          <p>The features include points (therefore addresses and locations), line strings (therefore streets, highways and boundaries), polygons (countries, provinces, tracts of land), and multi-part collections of these types.</p>
+          <p>GeoJSON features need not represent entities of the physical world only; mobile routing and navigation apps, for example, might describe their service coverage using GeoJSON.</p>
       </div>
 
     </div> <!-- end of main content row -->
@@ -52,7 +50,7 @@
           <li><a href="/google-maps/two.html">#2</a></li>
           <li><a href="/google-maps/three.html">#3</a></li>
           <li><a href="/google-maps/four.html">#4</a></li>
-          <li class="current"><a href="/google-maps/five.html">#5</a></li>
+          <li><a href="/google-maps/five.html">#5</a></li>
           <li><a href="/google-maps/six.html">#6</a></li>
           <li class="current"><a href="/google-maps/seven.html">#7</a></li>
           <li class="arrow"><a href="">&raquo;</a></li>
@@ -63,7 +61,7 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/five.js"></script>
+    <script src="/js/seven.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>
