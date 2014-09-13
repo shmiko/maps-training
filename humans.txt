@@ -1,8 +1,8 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
+/* A quick run through of some options for creating and publishing maps using Google Maps API v3 and Mapbox */
+/* https://github.com/jmbarlow/maps-training */
 /* humanstxt.org */
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+  Software: Atom, Git
