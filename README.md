@@ -18,6 +18,6 @@ Then when you're working on your project, just run the following command:
 ```bash
 grunt
 ```
-to start a static html server on http://localhost:9000/
+to start a static html server on [http://localhost:9000/](http://localhost:9000/)
 
 LiveReload is active, so any changes to files in the repo will trigger a browser reload.
